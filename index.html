@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingWhala – Best Deals</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #0e0e0e;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* HEADER LOGO */
+        .header-title {
+            background: linear-gradient(to right, #000, #1a1a1a);
+            padding: 15px 0;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #ffc107;
+            box-shadow: 0px 0px 20px #000;
+        }
+
+        /* NAVBAR */
+        .navbar-dark .nav-link {
+            color: #ffc107 !important;
+            font-size: 17px;
+            margin-left: 10px;
+        }
+
+        .navbar-dark .nav-link:hover {
+            color: #fff !important;
+            text-decoration: underline;
+        }
+
+        /* PRODUCT CARD */
+        .product-card {
+            background: #1a1a1a;
+            padding: 18px;
+            border-radius: 12px;
+            transition: 0.3s ease;
+            text-align: center;
+            box-shadow: 0px 0px 15px #000;
+            height: 100%;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0px 0px 20px #222;
+        }
+
+        .product-card img {
+            height: 260px;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .product-card p {
+            font-size: 15px;
+            color: #dcdcdc;
+            margin-top: 10px;
+        }
+
+        .btn-shop {
+            background: #ffc107;
+            border: none;
+            font-weight: bold;
+            color: #000;
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .btn-shop:hover {
+            background: #e6ac00;
+            transform: scale(1.05);
+        }
+
+        /* SOCIAL ICONS */
+        .social i {
+            font-size: 40px;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .fa-amazon { color: #ff9900; }
+        .fa-square-twitter { color: #1da1f2; }
+        .fa-whatsapp { color: #25d366; }
+
+        .social i:hover {
+            transform: scale(1.2);
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #000;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            color: #bbb;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header-title">SHOPPINGWHALA</div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning fw-bold" href="#">ShoppingWhala</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mobiles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search products...">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <!-- PRODUCT SECTION - ROW 1 -->
+    <div class="container">
+        <h3 class="text-warning mb-3">Latest Smartphones</h3>
+        <div class="row g-4">
+
+            <div class="col-sm-12 col-md-6 col-xl-4">
+                <div class="product-card">
+                    <img src="realmi 15t (1).png" alt="">
+                    <p>The Vivo X200 features incredible cameras, vibrant colors, and smooth daily performance.</p>
+                    <button class="btn-shop">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-4">
+                <div class="product-card">
+                    <img src="realmi 15x (1).png" alt="">
+                    <p>Realme 15X delivers fast charging, a solid battery, and a stylish body design.</p>
+                    <button class="btn-shop">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-4">
+                <div class="product-card">
+                    <img src="realmi p3 lite (1).png" alt="">
+                    <p>Realme P3 Lite is lightweight, powerful, and perfect for everyday use.</p>
+                    <button class="btn-shop">Shop Now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- PRODUCT SECTION - ROW 2 -->
+    <div class="container">
+        <h3 class="text-warning mb-3">Popular Smartphones</h3>
+        <div class="row g-4">
+
+            <div class="col-sm-12 col-md-6 col-xl-4">
+                <div class="product-card">
+                    <img src="realmi p4 pro (1).png" alt="">
+                    <p>The Apple iOS Pro gives unmatched performance and excellent battery life.</p>
+                    <button class="btn-shop">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-4">
+                <div class="product-card">
+                    <img src="redmi 13 (1).png" alt="">
+                    <p>Redmi 13 includes amazing features at a surprisingly budget-friendly price.</p>
+                    <button class="btn-shop">Shop Now</button>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-xl-4">
+                <div class="product-card">
+                    <img src="redmi 14c (1).png" alt="">
+                    <p>Redmi 14C delivers power efficiency, speed, and an attractive display.</p>
+                    <button class="btn-shop">Shop Now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SOCIAL + FOOTER -->
+    <div class="container mt-5">
+        <div class="row align-items-center">
+
+            <div class="col-sm-12 col-xl-12 text-center social">
+                <i class="fa-brands fa-amazon"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+
+            <div class=" col-sm-12  col-xl-12 text-center">
+                <p class="mb-0">© 2025 ShoppingWhala. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Made with ❤️ by ShoppingWhala Team
+    </div>
+
+</body>
+</html>
